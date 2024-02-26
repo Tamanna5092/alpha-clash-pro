@@ -14,11 +14,11 @@
 <body class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
     <main class="font-poppins">
         <!-- home screen -->
-    <section class="home min-h-screen text-white flex text-center justify-center items-center hidden">
+    <section id="home-screen" class="home min-h-screen text-white flex text-center justify-center items-center">
         <div class="flex flex-col items-center gap-10">
             <h1 class="text-8xl font-anton">ALPHABET CLASH</h1>
         <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-        <button class="btn btn-active bg-white text-black">Play Now</button>
+        <button onclick="play()" class="btn btn-active bg-white text-black">Play Now</button>
         </div>
     </section>
     <!-- play-ground  start-->
@@ -86,9 +86,19 @@
         </div>
     </section>
     <!-- play-ground end -->
-    <section class="score">
-
+    <!-- final score start -->
+    <section class="score flex justify-center items-center h-screen hidden">
+        <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-6 rounded-xl">
+            <h1 class="text-7xl">
+                <span class="font-extrabold">Score :</span>
+                <span class="font-semibold">14</span>
+            </h1>
+            <button class="text-black bg-white font-medium px-4 py-2 rounded-lg">Play Again</button>
+            <p class="font-medium">Practice will make you Pro</p>
+        </div>
     </section>
    </main>
+
+   <script src="script/alpha-clash.js"></script>
 </body>
 </html>
