@@ -12,7 +12,12 @@
 
 function handelKeyboardButtonPress(event){
     const playerPress = event.key
-    // console.log('player press', playerPress);
+    console.log('player press', playerPress);
+
+    // stop the game if press esc
+    if(playerPress === 'Escape'){
+        gameOver();
+    }
 
     // get the expected to press
     const currentAlphabetElement = document.getElementById('current-alphabet');
